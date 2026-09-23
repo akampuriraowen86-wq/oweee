@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>OwiTok LIVE</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="app">
+  <header class="topbar">
+    <button class="icon" id="backBtn">‹</button>
+    <div class="brand"><span class="brand-mark">O</span> OwiTok <b>LIVE</b></div>
+    <button class="icon" id="searchBtn">⌕</button>
+  </header>
+
+  <main id="liveList" class="live-list">
+    <section class="hero-card" data-live="1">
+      <div class="live-preview gradient-one"><div class="live-badge">● LIVE</div><div class="host-avatar">A</div><div class="host-name">Amina</div><div class="viewer-count">1.2K watching</div></div>
+      <div class="card-info"><strong>Amina's Evening Live</strong><span>@amina_owitok</span><p>Music • Chat • Requests</p></div>
+    </section>
+    <section class="hero-card" data-live="2">
+      <div class="live-preview gradient-two"><div class="live-badge">● LIVE</div><div class="host-avatar">J</div><div class="host-name">Jaxon</div><div class="viewer-count">846 watching</div></div>
+      <div class="card-info"><strong>Jaxon • Let's Talk</strong><span>@jaxon</span><p>Q&A and community chat</p></div>
+    </section>
+    <section class="hero-card" data-live="3">
+      <div class="live-preview gradient-three"><div class="live-badge">● LIVE</div><div class="host-avatar">M</div><div class="host-name">Maya</div><div class="viewer-count">532 watching</div></div>
+      <div class="card-info"><strong>Maya's Creator Room</strong><span>@maya</span><p>Creator tips • Friendly chat</p></div>
+    </section>
+  </main>
+
+  <button class="go-live" id="goLive">＋ Go LIVE</button>
+
+  <nav class="bottom-nav">
+    <button data-nav="home">⌂<small>Home</small></button>
+    <button class="active" data-nav="live">◉<small>LIVE</small></button>
+    <button data-nav="create">＋<small>Create</small></button>
+    <button data-nav="inbox">♡<small>Inbox</small></button>
+    <button data-nav="profile">○<small>Profile</small></button>
+  </nav>
+</div>
+
+<div id="room" class="room hidden">
+  <div class="room-video">
+    <div class="room-top"><button id="closeRoom" class="round">×</button><div class="room-host"><div class="mini-avatar">A</div><div><b id="roomName">Amina</b><span id="roomHandle">@amina_owitok</span></div><button class="follow">Follow</button></div><button class="round">⋯</button></div>
+    <div class="room-live">● LIVE</div>
+    <div class="room-viewers">1.2K</div>
+    <div id="comments" class="comments"></div>
+    <div class="room-bottom">
+      <button id="commentBtn" class="round wide">Add a comment…</button>
+      <button id="likeBtn" class="round">♡</button>
+      <button id="giftBtn" class="round">🎁</button>
+      <button id="shareBtn" class="round">↗</button>
+    </div>
+  </div>
+</div>
+
+<div id="modal" class="modal hidden"><div class="sheet"><button id="closeModal">×</button><h2>Go LIVE</h2><p>OwiTok can show the LIVE setup here. Actual broadcasting needs a live-streaming service/backend.</p><button class="primary" id="startPreview">Open LIVE setup</button></div></div>
+<script src="script.js"></script>
+</body></html>
